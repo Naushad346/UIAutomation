@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     triggers {
-        // Run every night at 2 AM
-        cron('0 2 * * *')
+        // Run every night at 11:13 PM
+        cron('13 23 * * *')
     }
     
     options {
