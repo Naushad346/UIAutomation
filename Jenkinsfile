@@ -17,7 +17,7 @@ pipeline {
     
     environment {
         // Email configuration
-        EMAIL_RECIPIENT = 'your-email@example.com'
+        EMAIL_RECIPIENT = 'ahmadn346@gmail.com'
         REPORT_PATH = '${WORKSPACE}/test-reports'
     }
     
@@ -97,7 +97,7 @@ pipeline {
                         <h3>Test Results</h3>
                         <p>All tests passed successfully!</p>
                     ''',
-                    to: '${EMAIL_RECIPIENT}',
+                    to: 'ahmadn346@gmail.com',
                     mimeType: 'text/html',
                     recipientProviders: [
                         developers(),
@@ -124,7 +124,7 @@ pipeline {
                         <p>Please check the build logs for more details.</p>
                         <p><a href="${BUILD_URL}console">View Console Output</a></p>
                     ''',
-                    to: '${EMAIL_RECIPIENT}',
+                    to: 'ahmadn346@gmail.com',
                     mimeType: 'text/html',
                     recipientProviders: [
                         developers(),
@@ -148,7 +148,7 @@ pipeline {
                         <p><b>Branch:</b> ${GIT_BRANCH}</p>
                         <p><b>Commit:</b> ${GIT_COMMIT}</p>
                     ''',
-                    to: '${EMAIL_RECIPIENT}',
+                    to: 'ahmadn346@gmail.com',
                     mimeType: 'text/html',
                     recipientProviders: [
                         developers(),
